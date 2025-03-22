@@ -1,5 +1,5 @@
 {
-	"name": "bedigit/breadcrumbs",
+	"name": "mayeulak/breadcrumbs",
 	"description": "A reusable breadcrumb component for Laravel",
 	"type": "laravel-package",
 	"autoload": {
