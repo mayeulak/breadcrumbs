@@ -7,7 +7,7 @@
 				<li class="breadcrumb-item{{ $loop->last ? ' active' : '' }}"
 				    @if ($loop->last) aria-current="page" @endif>
 					@if ($item['url'] && !$loop->last)
-						<a href="{{ $item['url'] }}">{{ $item['title'] }}</a>
+						<a href="{{ $item['url'] }}" class="link-primary text-decoration-none">{{ $item['title'] }}</a>
 					@else
 						{{ $item['title'] }}
 					@endif
@@ -19,7 +19,7 @@
 			@foreach ($breadcrumbs as $index => $item)
 				@if ($item['url'] && !$loop->last)
 					<li class="breadcrumb-item">
-						<a href="{{ $item['url'] }}">{{ $item['title'] }}</a>
+						<a href="{{ $item['url'] }}" class="link-primary text-decoration-none">{{ $item['title'] }}</a>
 					</li>
 				@else
 					<li class="breadcrumb-item active" aria-current="page">
